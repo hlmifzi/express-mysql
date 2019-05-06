@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const validate = require('express-validation')
 const ApiResponse = require('../model/apiResponse')
-const Joi = require('Joi')
+const Joi = require('joi')
 const ModelValid = require('../middleware/validation/model.validation')
 
 const weddingEvent = require('../model/wedding/weddingEvent')
