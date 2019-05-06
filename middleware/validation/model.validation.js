@@ -18,5 +18,15 @@ module.exports = {
          username: Joi.string().required(),
          password: Joi.string().required(),
       }
+   },
+   updateListKehadiran: {
+      params: {
+         id: Joi.number().required()
+      },
+      body: {
+         id_status_undangan: Joi.number().required(),
+         ucapan: Joi.string().required(),
+      }
+
    }
 }
